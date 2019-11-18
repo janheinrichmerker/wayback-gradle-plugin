@@ -13,7 +13,7 @@ import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 import java.net.URL
-import java.util.*
+import java.time.LocalDateTime
 
 
 abstract class WaybackDownloadTask : DefaultTask() {
@@ -24,7 +24,7 @@ abstract class WaybackDownloadTask : DefaultTask() {
 
     @get:Optional
     @get:Input
-    var timestamp: Date? = null
+    var timestamp: LocalDateTime? = null
 
     @get:Input
     @get:OutputFile

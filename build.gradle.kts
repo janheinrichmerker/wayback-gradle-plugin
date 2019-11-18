@@ -24,7 +24,7 @@ dependencies {
     implementation(
         group = "dev.reimer",
         name = "wayback-api",
-        version = "ced1d36d03"
+        version = "b3db1fc1"
     )
     implementation(
         group = "com.squareup.okhttp3",
