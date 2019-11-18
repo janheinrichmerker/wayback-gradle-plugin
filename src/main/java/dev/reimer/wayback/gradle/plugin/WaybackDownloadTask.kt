@@ -51,7 +51,8 @@ abstract class WaybackDownloadTask : DefaultTask() {
         val response = client.newCall(request).execute()
 
         // Clear output file.
-        destination.delete()
+        destination.mkdirs()
+        if (destination.exists()) destination.delete()
         destination.createNewFile()
 
         // Copy response stream.
