@@ -1,0 +1,38 @@
+[![](https://jitpack.io/v/dev.reimer/wayback-gradle-plugin.svg)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
+
+# wayback-gradle-plugin
+
+Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](https://archive.org/help/wayback_api.php).
+
+## Gradle Dependency
+
+This library is available on [**jitpack.io**](https://jitpack.io/#dev.reimer/wayback-gradle-plugin).  
+Add this in your `build.gradle.kts` or `build.gradle` file:
+
+<details open><summary>Kotlin</summary>
+
+```kotlin
+repositories {
+    maven("https://jitpack.io")
+}
+
+dependencies {
+    implementation("dev.reimer:wayback-gradle-plugin:<version>")
+}
+```
+
+</details>
+
+<details><summary>Groovy</summary>
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'dev.reimer:wayback-gradle-plugin:<version>'
+}
+```
+
+</details>
