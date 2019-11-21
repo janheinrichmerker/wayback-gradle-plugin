@@ -2,9 +2,6 @@ package dev.reimer.wayback.gradle.plugin
 
 import dev.reimer.wayback.api.WaybackApi
 import kotlinx.coroutines.runBlocking
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okio.sink
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
 import org.gradle.api.tasks.Input
@@ -38,30 +35,7 @@ abstract class WaybackDownloadTask : DefaultTask() {
             ?: throw GradleException(
                 "Snapshot for url $url not found in the Web Archive."
             )
-        val url = snapshot.url
-        downloadUrl(url)
-        println("Downloading snapshot to ${destination.path}")
-    }
-
-    private fun downloadUrl(url: URL) {
-        val client = OkHttpClient()
-        val request = Request.Builder()
-            .url(url)
-            .build()
-        val response = client.newCall(request).execute()
-
-        // Clear output file.
-        destination.mkdirs()
-        if (destination.exists()) destination.delete()
-        destination.createNewFile()
-
-        // Copy response stream.
-        response.body?.use { body ->
-            body.source().use { source ->
-                destination.sink().use { sink ->
-                    source.readAll(sink)
-                }
-            }
-        }
+        println("Downloading snapshot to ${destination.path}.")
+        snapshot.downloadTo(destination)
     }
 }
