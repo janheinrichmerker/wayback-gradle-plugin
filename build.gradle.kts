@@ -10,7 +10,7 @@ group = "dev.reimer"
 version = "0.1.0"
 
 repositories {
-    mavenCentral()
+    jcenter()
     maven(url = "https://jitpack.io")
 }
 
