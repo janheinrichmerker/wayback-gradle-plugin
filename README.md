@@ -2,7 +2,8 @@
 
 # wayback-gradle-plugin
 
-Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](https://archive.org/help/wayback_api.php).
+Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](https://archive.org/help/wayback_api.php),
+powered by the [Java API wrapper](https://github.com/reimersoftware/wayback-api).
 
 ## Gradle Dependency
 
