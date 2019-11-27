@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/dev.reimer/wayback-gradle-plugin.svg)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
 
-# wayback-gradle-plugin
+# wayback-gradle-plugin<sup>[α](#status-α)</sup>
 
 Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](https://archive.org/help/wayback_api.php),
 powered by the [Java API wrapper](https://github.com/reimersoftware/wayback-api).
