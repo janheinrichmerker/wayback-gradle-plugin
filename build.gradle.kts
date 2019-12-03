@@ -1,8 +1,11 @@
+import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.3.50"
     `java-gradle-plugin`
+    id("com.gradle.plugin-publish") version "0.10.1"
+    id("org.jetbrains.dokka") version "0.10.0"
     `maven-publish`
 }
 
@@ -33,8 +36,41 @@ dependencies {
     )
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+tasks {
+    withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+
+    withType<DokkaTask> {
+        outputDirectory = "$buildDir/javadoc"
+        outputFormat = "javadoc"
+    }
+}
+
+pluginBundle {
+    website = "https://github.com/reimersoftware/wayback-gradle-plugin"
+    vcsUrl = "https://github.com/reimersoftware/wayback-gradle-plugin.git"
+    tags = listOf(
+        "wayback-gradle-plugin",
+        "wayback-api",
+        "internet-archive",
+        "wayback-machine",
+        "wayback",
+        "wayback-machine-downloader",
+        "gradle",
+        "gradle-plugin"
+    )
+}
+
+gradlePlugin {
+    plugins {
+        create(name) {
+            id = "dev.reimer.tex"
+            displayName = "Wayback Gradle Plugin"
+            description = "Plugin for the Internet Archive's Wayback API."
+            implementationClass = "dev.reimer.wayback.gradle.plugin.WaybackPlugin"
+        }
+    }
 }
 
 publishing {
