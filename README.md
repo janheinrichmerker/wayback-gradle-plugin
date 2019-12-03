@@ -1,4 +1,6 @@
-[![](https://jitpack.io/v/dev.reimer/wayback-gradle-plugin.svg)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
+[![GitHub Actions](https://img.shields.io/github/workflow/status/reimersoftware/wayback-gradle-plugin/Gradle%20CI?style=flat-square)](https://github.com/reimersoftware/wayback-gradle-plugin/actions)
+[![Gradle plugin portal](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/dev/reimer/wayback/dev.reimer.wayback.gradle.plugin/maven-metadata.xml.svg?label=gradle&style=flat-square)](https://plugins.gradle.org/plugin/dev.reimer.wayback)
+[![JitPack](https://img.shields.io/jitpack/v/github/reimersoftware/wayback-gradle-plugin?style=flat-square)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
 
 # wayback-gradle-plugin
 
@@ -6,18 +8,14 @@ Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](ht
 
 ## Gradle Dependency
 
-This library is available on [**jitpack.io**](https://jitpack.io/#dev.reimer/wayback-gradle-plugin).  
+The plugin is available from the Gradle [plugin portal](https://plugins.gradle.org/plugin/dev.reimer.wayback).  
 Add this in your `build.gradle.kts` or `build.gradle` file:
 
 <details open><summary>Kotlin</summary>
 
 ```kotlin
-repositories {
-    maven("https://jitpack.io")
-}
-
-dependencies {
-    implementation("dev.reimer:wayback-gradle-plugin:<version>")
+plugins {
+  id("dev.reimer.wayback") version "<version>"
 }
 ```
 
@@ -26,12 +24,8 @@ dependencies {
 <details><summary>Groovy</summary>
 
 ```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
-dependencies {
-    implementation 'dev.reimer:wayback-gradle-plugin:<version>'
+plugins {
+  id "dev.reimer.wayback" version "<version>"
 }
 ```
 
