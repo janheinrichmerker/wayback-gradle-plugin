@@ -23,7 +23,6 @@ abstract class WaybackDownloadTask : DefaultTask() {
     @get:Input
     var timestamp: LocalDateTime? = null
 
-    @get:Input
     @get:OutputFile
     abstract var destination: File
 
