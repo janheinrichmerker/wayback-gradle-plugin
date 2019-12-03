@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "dev.reimer"
-version = "0.1.0"
+version = "0.1.1"
 
 repositories {
     jcenter()
@@ -65,7 +65,7 @@ pluginBundle {
 gradlePlugin {
     plugins {
         create(name) {
-            id = "dev.reimer.tex"
+            id = "dev.reimer.wayback"
             displayName = "Wayback Gradle Plugin"
             description = "Plugin for the Internet Archive's Wayback API."
             implementationClass = "dev.reimer.wayback.gradle.plugin.WaybackPlugin"
