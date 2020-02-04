@@ -2,7 +2,7 @@
 [![Gradle plugin portal](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/dev/reimer/wayback/dev.reimer.wayback.gradle.plugin/maven-metadata.xml.svg?label=gradle&style=flat-square)](https://plugins.gradle.org/plugin/dev.reimer.wayback)
 [![JitPack](https://img.shields.io/jitpack/v/github/reimersoftware/wayback-gradle-plugin?style=flat-square)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
 
-# wayback-gradle-plugin<sup>[α](#status-α)</sup>
+# 🕰️ wayback-gradle-plugin<sup>[α](#status-α)</sup>
 
 Gradle plugin for the [Internet Archive](https://archive.org)'s [Wayback API](https://archive.org/help/wayback_api.php),
 powered by the [Java API wrapper](https://github.com/reimersoftware/wayback-api).
