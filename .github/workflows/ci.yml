@@ -20,7 +20,7 @@ jobs:
         with:
           gradle-version: '6.5'
       - name: 🏗️ Build with Gradle
-        run: ./gradlew build
+        run: gradle build
   test:
     needs: build
     name: ✅ Gradle test
@@ -39,4 +39,4 @@ jobs:
         with:
           gradle-version: '6.5'
       - name: ✅ Test with Gradle
-        run: ./gradlew test
+        run: gradle test
