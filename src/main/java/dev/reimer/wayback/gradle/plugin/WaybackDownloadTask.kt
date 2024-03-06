@@ -10,6 +10,7 @@ import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 import java.net.URL
+import java.net.URI
 import java.time.LocalDateTime
 
 
@@ -17,7 +18,7 @@ abstract class WaybackDownloadTask : DefaultTask() {
     private val api = WaybackApi()
 
     @get:Input
-    abstract var url: URL
+    abstract var url: URI
 
     @get:Optional
     @get:Input
@@ -28,7 +29,7 @@ abstract class WaybackDownloadTask : DefaultTask() {
 
     @TaskAction
     fun download() = runBlocking {
-        val snapshot = api.available(url, timestamp)
+        val snapshot = api.available(url.toURL(), timestamp)
             .archivedSnapshots
             .closest
             ?: throw GradleException(
