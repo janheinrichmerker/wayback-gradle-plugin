@@ -20,7 +20,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
     implementation("dev.reimer:wayback-api:22d527e")
-    implementation("com.squareup.okhttp3:okhttp:4.2.2")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
 
 lateinit var javadocJar: TaskProvider<Jar>
