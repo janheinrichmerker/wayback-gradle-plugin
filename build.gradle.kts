@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
     implementation("dev.reimer:wayback-api:22d527e")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
