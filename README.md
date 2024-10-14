@@ -1,6 +1,6 @@
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/heinrichreimer/wayback-gradle-plugin/ci.yml?branch=master&style=flat-square)](https://github.com/heinrichreimer/wayback-gradle-plugin/actions/workflows/ci.yml)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/janheinrichmerker/wayback-gradle-plugin/ci.yml?branch=master&style=flat-square)](https://github.com/janheinrichmerker/wayback-gradle-plugin/actions/workflows/ci.yml)
 [![Gradle plugin portal](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/dev/reimer/wayback/dev.reimer.wayback.gradle.plugin/maven-metadata.xml.svg?label=gradle&style=flat-square)](https://plugins.gradle.org/plugin/dev.reimer.wayback)
-[![JitPack](https://img.shields.io/jitpack/v/github/heinrichreimer/wayback-gradle-plugin?style=flat-square)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
+[![JitPack](https://img.shields.io/jitpack/v/github/janheinrichmerker/wayback-gradle-plugin?style=flat-square)](https://jitpack.io/#dev.reimer/wayback-gradle-plugin)
 
 # 🕰️ wayback-gradle-plugin<sup>[α](#status-α)</sup>
 
